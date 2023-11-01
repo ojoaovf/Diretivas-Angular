@@ -1,28 +1,35 @@
-# Tarefa
+# Gerenciador de Tarefas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+Este é um simples aplicativo construído para gerenciar tarefas, exibindo uma lista de tarefas concluídas e não concluídas. O aplicativo foi desenvolvido usando Angular e incorpora as seguintes funcionalidades:
 
-## Development server
+## Estrutura da Tarefa
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Cada "Tarefa" no aplicativo possui as seguintes propriedades:
 
-## Code scaffolding
+- **Descrição**: Uma descrição da tarefa (tipo: string).
+- **Concluída**: Um indicador booleano que representa se a tarefa foi concluída ou não.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Componente da Lista de Tarefas
 
-## Build
+O componente que exibe a lista de tarefas utiliza um array denominado "tarefas". Este array contém no mínimo 5 tarefas, algumas concluídas e outras não concluídas. A lista é renderizada no HTML usando a diretiva *ngFor para iterar sobre o array "tarefas" e exibir cada tarefa em um elemento HTML `<li>` dentro de uma lista não ordenada.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Estilo de Texto Tachado
 
-## Running unit tests
+A diretiva [ngStyle] é utilizada para aplicar um estilo de texto tachado (riscado) nas tarefas concluídas na lista. Isso é alcançado por meio de uma expressão que retorna um objeto com a propriedade "text-decoration" definida como "line-through" se a tarefa estiver concluída.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Botão "Concluir"
 
-## Running end-to-end tests
+Para cada tarefa na lista, há um botão "Concluir". Este botão alterna o valor da propriedade "concluida" da tarefa entre verdadeiro e falso quando clicado, proporcionando uma maneira fácil de marcar ou desmarcar a conclusão da tarefa.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Como Executar o Aplicativo
 
-## Further help
+Para executar o aplicativo, siga os seguintes passos:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# Diretivas-Angular
+1. Certifique-se de ter o Angular CLI instalado em seu ambiente.
+2. Clone este repositório.
+3. Navegue até o diretório do projeto.
+4. Execute `ng serve` no terminal.
+5. Abra seu navegador e acesse `http://localhost:4200/`.
+
+# Autor
+<p> JOÃO VICTOR 👋 <a href="https://www.linkedin.com/in/ojoaovictor/"> Entre em Contato!</a> </p>
