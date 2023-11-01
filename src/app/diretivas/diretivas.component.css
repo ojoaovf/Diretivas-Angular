@@ -1,0 +1,48 @@
+/* diretivas.component.css */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+  }
+  
+  li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .task-text {
+    font-size: 16px;
+    flex-grow: 1;
+    margin-right: 12px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #217dbb;
+  }
+  
